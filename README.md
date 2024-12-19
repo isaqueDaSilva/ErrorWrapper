@@ -1,7 +1,7 @@
 # Table of Contents
 1. [Description](#description)
 2. [Features](#features)
-3. [Installation](#installation)
+3. [Installation](#installation-swift-Package-manager)
 4. [Usage](#usage)
 5. [API Reference](#api-reference)
 6. [Example Behavior](#example-behavior)
@@ -17,7 +17,7 @@ ErrorWrapper is a lightweight and reusable SwiftUI library designed to handle er
 - A SwiftUI View extension to easily present alerts when errors occur.
 - Automatic state reset when alerts are dismissed.
 
-# Installation (Swift Package Manager (SPM))
+# Installation - Swift Package Manager
 1. Open your Xcode project.
 2. Go to File → Add Packages.
 3. Enter the repository URL for your library.
