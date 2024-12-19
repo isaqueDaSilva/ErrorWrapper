@@ -1,15 +1,14 @@
 # Table of Contents
-1. [Description](#description)
-2. [Features](#features)
-3. [Installation](#installation-swift-Package-manager)
-4. [Usage](#usage)
-5. [API Reference](#api-reference)
-6. [Example Behavior](#example-behavior)
-7. [Contributions](#contributions)
-8. [License](#license)
-9. [Author](#author)
+1. [Features](#features)
+2. [Installation](#installation-swift-Package-manager)
+3. [Usage](#usage)
+4. [API Reference](#api-reference)
+5. [Example Behavior](#example-behavior)
+6. [Contributions](#contributions)
+7. [License](#license)
+8. [Author](#author)
 
-# Description
+# Error Wrapper
 ErrorWrapper is a lightweight and reusable SwiftUI library designed to handle errors gracefully within SwiftUI views. It provides an easy mechanism to display alerts when an error occurs and resets the error state automatically upon dismissal.
 
 # Features
@@ -58,10 +57,10 @@ struct ContentView: View {
 }
 ```
 
-## Explanation (errorAlert):
-1. Takes a binding to an optional Error object.
-2. Presents an alert if the error’s title or description is not nil.
-3. Automatically resets the error state to nil when the alert is dismissed.
+### Explanation (errorAlert):
+- Takes a binding to an optional Error object.
+- Presents an alert if the error’s title or description is not nil.
+- Automatically resets the error state to nil when the alert is dismissed.
 
 # API Reference
 
@@ -86,9 +85,9 @@ public func errorAlert(
     @ViewBuilder action: @escaping () -> some View
 ) -> some View
 ```
-- Parameters:
-1. rror: A binding to the Error object that will trigger the alert.
-2. action: A trailing closure that defines actions to execute when the alert is dismissed.
+### Parameters:
+- error: A binding to the Error object that will trigger the alert.
+- action: A trailing closure that defines actions to execute when the alert is dismissed.
 
 # Example Behavior
 - An Error object is triggered (e.g., upon a failed network request).
