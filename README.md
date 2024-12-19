@@ -52,7 +52,7 @@ struct ContentView: View {
         }
         .errorAlert(error: $error) {
             // Action to perform after the alert is dismissed
-            print("Alert dismissed")
+            Button("OK") { }
         }
     }
 }
