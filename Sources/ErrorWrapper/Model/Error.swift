@@ -8,7 +8,7 @@
 import Foundation
 
 /// A Representation data of an error that will be occur in some task execution.
-public struct Error: Sendable {
+public struct ExecutionError: Sendable, Error {
     public var title: String
     public var descrition: String
     
