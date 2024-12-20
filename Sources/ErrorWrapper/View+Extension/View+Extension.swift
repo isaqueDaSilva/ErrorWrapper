@@ -14,7 +14,7 @@ extension View {
     ///   - action: A ViewBuilder returning the alert’s actions to be executed when an error will thrown.
     @ViewBuilder
     public func errorAlert(
-        error: Binding<ErrorWrapper.Error?>,
+        error: Binding<ExecutionError?>,
         @ViewBuilder action: () -> some View
     ) -> some View {
         self
